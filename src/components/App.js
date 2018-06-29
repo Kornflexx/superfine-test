@@ -15,11 +15,11 @@ const Test = props => (
     >
         <input
             type="text"
-            value={props.state.name}
+            value={props.name}
             oninput={e => props.setState({ name: e.target.value })}
         />
         <h1>
-            {props.state.name}
+            {props.name}
         </h1>
     </div>
 )

@@ -17,7 +17,7 @@ export const withState = (initialState) => (ComponentToWrap) => {
     const WrappedComponent = (props) => (
         <ComponentToWrap
             {...props}
-            state={state}
+            {...state}
             setState={setState}
         />
     )
